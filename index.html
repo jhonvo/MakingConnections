@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="./css/normalize.css"/>
+        <link rel="stylesheet" href="./css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="nav1">
+                <h1>Profile</h1>
+                <ul class="nav2">
+                    <li>Home</li>
+                    <li>My Profile</li>
+                    <li>Find Connections</li>
+                </ul>
+            </div>
+            <button>Sing Out</button>
+        </header>
+        <div class="main">
+            <div class="leftblock">
+                <div class="demo">
+                    <div class="demoHeader"></div>
+                    <div class="information">
+                        <div class="picture">
+                            <img src="./images/jane-m.jpg" alt="Profile Picture">
+                        </div>
+                        <h1 class="name">
+                            Jane Doe
+                        </h1>
+                        <p class="location">
+                            <img class="icon" src="./icons/map-marker.png" alt="map marker"> Seattle
+                        </p>
+                        <p class="description">
+                            Developer | Engineer | Problem Solver<br>
+                            Master of Shadows and the Internet!
+                        </p>
+                        <p  class="edit">
+                            <img onclick="profilename()" class="icon" src="./icons/gear.png" alt="gear icon"> <a onclick="profilename()" href="#">Edit Profile</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <p class="boxtitle">Education</p>
+                    <div class="boxcontent">
+                        <h3 class="school">Coding Dojo - Full Stack Bootcamp</h3>
+                        <p class="date">Dec 2009 - Mar 2020</p>
+                        <p class="details">Tripple Black belt in Phyton, MERN, and C#...</p>
+                        <h3 class="school">Emaple 2</h3>
+                        <p class="date">Other Date</p>
+                        <p class="details">Other knowledge</p>
+                    </div>
+                </div>  
+            </div>
+            <div class="rightblock">
+                <div class="box">
+                    <div class="boxtitle">
+                        <div class="notif">2</div>
+                        <p>Connection Request</p>
+                    </div>
+                    <div class="boxcontent">
+                        <div class="request">
+                            <p class="reqfoto"><img src="./images/todd-s.jpg" alt="Todd"></p>
+                            <p class="reqname">Todd E</p>
+                            <p class="reqaction"><img src="./icons/accept-circle.png" alt="accept"><img src="./icons/close-circle.png" alt="reject"></p>
+                        </div>
+                        <div class="request">
+                            <p class="reqfoto"><img src="./images/phil-s.jpg" alt="Phill"></p>
+                            <p class="reqname">Phill K</p>
+                            <p class="reqaction"><img src="./icons/accept-circle.png" alt="accept"><img src="./icons/close-circle.png" alt="reject"></p>
+                        </div>
+
+                    </div>
+                </div>  
+                <div class="box">
+                    <div class="boxtitle">
+                        <div class="notif">418</div>
+                        <p>Your Connections</p>
+                    </div>
+                    <div class="boxcontent">
+                        <div class="connections">
+                            <p class="reqfoto"><img src="./images/adrien-s.jpg" alt="Adrien"></p>
+                            <p class="reqname">Adrien D</p>
+                        </div>
+
+                        <div class="connections">
+                            <p class="reqfoto"><img src="./images/anne-s.jpg" alt="Anne"></p>
+                            <p class="reqname">Anne J</p>
+                        </div>
+
+                        <div class="connections">
+                            <p class="reqfoto"><img src="./images/alayne-s.jpg" alt="Adrien"></p>
+                            <p class="reqname">Alayne T</p>
+                        </div>
+
+                        <div class="connections">
+                            <p class="reqfoto"><img src="./images/arry-s.jpg" alt="Arry"></p>
+                            <p class="reqname">Arry Y</p>
+                        </div>
+
+                    </div>
+                    <div class="boxbottom"><a href="#">View More</a></div>
+                </div>  
+            </div>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
