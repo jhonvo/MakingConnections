@@ -26,15 +26,16 @@ function connectionUpdate (event){
         let subs = parseInt(pending.innerHTML);
         subs -= 1;
         pending.innerHTML = subs;
+    // Adds to the actual number of connections
+    let accepted = document.querySelector('.connectionaccepted')
+    console.log(accepted);
+    let sum = parseInt(accepted.innerHTML);
+    sum += 1;
+    accepted.innerHTML = sum;
     }
 
     else{
-        // Adds to the actual number of connections
-        let accepted = document.querySelector('.connectionaccepted')
-        console.log(accepted);
-        let sum = parseInt(accepted.innerHTML);
-        sum += 1;
-        accepted.innerHTML = sum;
+
         // Substract from the actual number of requests
         let pending = document.querySelector('.connectionrequest')
         console.log(pending);
